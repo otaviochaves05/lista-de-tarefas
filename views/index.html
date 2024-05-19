@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de tarefas</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
+
 <body>
     <header>
         <h1>Lista de tarefas</h1>
     </header>
-    <table>
-        <tr>
-            <th>Afazeres</th>
-            <th>Data</th>
-            <th>Status</th>
-        </tr>
-        
-    </table>
+    <main>
+        <div class="container">
+            <form action="">
+                <input type="text" id="tarefaInput" placeholder="Adicione uma nova tarefa">
+                <input type="date" id="dataInput">
+                <button type="submit" id="addTarefa">Adicionar Tarefa</button>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Afazeres</th>
+                        <th>Data</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="corpoTabela">
+
+                </tbody>
+            </table>
+
+        </div>
+    </main>
+    <script src="../assets/js/app.js"></script>
 </body>
+
 </html>
