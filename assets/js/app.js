@@ -5,6 +5,12 @@ const buttonSubmit = document.querySelector("#addTarefa");
 buttonSubmit.addEventListener("click", addTarefa);
 
 function addTarefa() {
+
+    if (tarefaInput.value.trim() === "") {
+        alert("Por favor, adicione uma tarefa.");
+        return;
+    }
+
     let tarefa = new Object();
     tarefa.id = obterID();
     tarefa.nome = tarefaInput.value;
