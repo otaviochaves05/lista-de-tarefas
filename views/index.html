@@ -13,11 +13,15 @@
         <h1>Lista de tarefas</h1>
     </header>
     <main>
+        <div id="teste">
+            
+        </div>
         <div class="container">
+            <label for="">Você ainda não possui nenhuma tarefa... <br> Preencha o formulário e clique em "Adicionar tarefa" para criá-la!</label>
             <form action="">
                 <input type="text" id="tarefaInput" placeholder="Adicione uma nova tarefa">
                 <input type="date" id="dataInput">
-                <button type="submit" id="addTarefa">Adicionar Tarefa</button>
+                <button type="button" id="addTarefa">Adicionar Tarefa</button>
             </form>
             <table>
                 <thead>
@@ -27,11 +31,8 @@
                         <th>Status</th>
                     </tr>
                 </thead>
-                <tbody id="corpoTabela">
-
-                </tbody>
+                <tbody id="corpoTabela"></tbody>
             </table>
-
         </div>
     </main>
     <script src="../assets/js/app.js"></script>

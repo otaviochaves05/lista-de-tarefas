@@ -21,16 +21,34 @@ table th{
     width: 200px;
 } 
 
+td{
+    border: 1px solid black;
+    padding: 8px;
+    width: 200px;
+    text-align: center; 
+}
+
+td button{
+    margin: 0 8px;
+}
+
+
 form{
     border: 1px solid black;
     padding: 4px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 32px;
+    margin: 24px 0;
+}
+
+input{
+    border: 1px solid #B0B0B0;
+    border-radius: 4px;
 }
 
 input, button{
     padding: 8px;
+    cursor: pointer;
 }
 
 button{
@@ -38,3 +56,12 @@ button{
     background-color: green;
     color: white;
 }
+
+p{
+    background-color: aqua;
+}
+
+.botaoRemover{
+    background-color: red;
+}
+
